@@ -1,0 +1,201 @@
+/*Installing Google font Poppins for the website*/
+@import 'https://fonts.googleapis.com/css?family=Poppins';
+
+h1, h2, h3, h4, h5, h6, p, a, li, small, dt, dd {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2,a {
+  color: #18d1b6;
+}
+
+.navbar a, .footer a {
+  color: black;
+}
+
+.page-header {
+  border-bottom: 2px solid #18d1b6;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.page-container{
+  background-color: #fff;
+  background-image: url("https://dl.dropboxusercontent.com/s/v5rp4ib0r67a0mp/axiom-pattern.png");
+}
+
+.container {
+  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+/*Style for mobile devices*/
+@media screen and (max-width: 480px) {
+  .container {
+    padding-top: 20%;
+  }
+  .skills > a {
+    font-size: 80%;
+  }
+  .expert {
+    margin-right: 20% !important;
+  }
+  .box {
+    margin-top: 2%;
+  }
+}
+
+
+/*Style for navigation bar*/
+
+nav, footer {
+  padding-left: 10%;
+  padding-right: 10%;
+  box-shadow: 0 0 10px black;
+}
+
+.navbar .active {
+  background-color: white;
+}
+
+.navbar-light {
+  background-color: #18d1b6;
+}
+
+.navbar-brand {
+  padding: 7px 15px;
+}
+
+.navbar-brand>img{
+  height: 100%;
+  width: auto;
+}
+
+.icon-bar {
+  background-color: black;
+}
+
+.navbar-toggle {
+  border-color: black;
+}
+
+
+/*Style for home / very top section */
+#home {
+  margin: 0 auto;
+}
+
+.skills {
+  margin: 3%;
+}
+
+.skill-text {
+  color: gray;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0;
+  font-size: 80%;
+}
+
+hr {
+  margin-left: 42%;
+  text-align: right;
+  width: 55%;
+  border-width: 2px !important;
+  border-color: #18d1b6 !important;
+}
+
+.expert {
+  margin-right: 50%;
+  color: #18d1b6;
+}
+
+.beginner {
+  color: #18d1b6;
+}
+
+.popover-title {
+  background-color: #18d1b6;
+}
+
+.box {
+  background: #18d1b6;
+  height: 10px;
+}
+
+#design {
+  width: 53%;
+}
+
+#web {
+  width: 45%;
+}
+
+#python {
+  width: 20%;
+  text-align: left;
+}
+
+.home-link {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+
+/* Style for about section */
+.about-text {
+  padding-bottom: 2%;
+}
+
+.img-circle {
+  margin-bottom: 3%;
+}
+
+
+/* Style for portfolio section */
+
+.placeholder {
+  margin-bottom: 5%;
+  box-shadow: 0 0 5px black;
+}
+
+
+/* Style for contact section */
+#contact-form, #contact-text {
+  margin-bottom: 5%;
+}
+
+.form-group, .btn {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  background-color: #18d1b6;
+  width: 100%;
+  border: none;
+  margin-top: 2%;
+}
+
+
+/* Style for footer section */
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #18d1b6;
+}
+
+.site-map {
+  padding-top: 1.5%;
+}
+
+.site-map>a {
+  margin-right: 5%;
+}
+
+.footer>p {
+  padding-top: 0.5%;
+}
