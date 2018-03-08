@@ -38,9 +38,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .container {
     padding-top: 20%;
   }
-  .skills > a {
-    font-size: 80%;
-  }
   .expert {
     margin-right: 20% !important;
   }
@@ -87,17 +84,6 @@ nav, footer {
 /*Style for home / very top section */
 #home {
   margin: 0 auto;
-}
-
-.skills {
-  margin: 3%;
-}
-
-.skill-text {
-  color: gray;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 0;
-  font-size: 80%;
 }
 
 hr {
