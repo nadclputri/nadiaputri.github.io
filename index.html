@@ -6,8 +6,8 @@
     <!-- Metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio showcasing works of Nadia Putri, Perth-based web developer and designer">
-    <meta name="keywords" content="Nadia Putri, portfolio, Nadia, Putri, web designer, web developer, Perth designer">
+    <meta name="description" content="projects showcasing works of Nadia Putri, Perth-based web developer and designer">
+    <meta name="keywords" content="Nadia Putri, projects, Nadia, Putri, web designer, web developer, Perth designer">
     <meta name="author" content="Nadia Putri">
 
     <!-- Links to Bootstrap -->
@@ -16,21 +16,22 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="scripts/page.js"></script>
     
     <!-- Links to external stylesheets -->
-    <link rel="stylesheet" href="styles/page.css">
+    <link rel="stylesheet" href="styles/style.css">
 
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="200">
-    <div class="page-container">
+    <div id="page-container">
       <nav role="navigation" class="navbar navbar-fixed-top">
           <div id="sidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
               <a href="#home">home</a>
               <a href="#about">about</a>
-              <a href="#portfolio">portfolio</a>
+              <a href="#projects">projects</a>
               <a href="#contact">contact</a>
           </div><!-- navbar-collapse -->
         <span class="nav-button navbar-right" onclick="openNav()">&#9776; menu</span>
@@ -38,12 +39,15 @@
 
 
       <div class="container">
-        <div id="home" class="row">
+        <div class="row">
           <div class="col-lg-12">
             <img src="images/portfolioLogoLarge.png" alt="logo showing Nadia Putri written next to letter NP in a box, with Web Developer and Designer written below it" class="img-responsive center-block">
-            <div class="home-link">
-              <a href="#portfolio">>> view portfolio</a>
+            <div id="home-social">
+              <a href="https://www.linkedin.com/in/nadiaclputri/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
+              <a href="http://github.com/nadclputri/" target="_blank"><i class="fab fa-github-square fa-5x"></i></a>
+              <a href="mailto:nadclputri@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-5x"></i></a>
             </div>
+              <a href="#projects" id="home-to-project">>> view projects</a>
           </div> <!-- column for home section -->
         </div> <!-- row for home section -->
 
@@ -56,99 +60,49 @@
 
           <div class="col-md-6">
             <p>I'm Nadia Putri.</p>
-            <p>I am an international student, currently a Master of IT student at UWA.</p>
+            <p>I am an international student, currently a Master of IT student at UWA. My bachelor degree was in web design.</p>
             <p>My passion includes coding and volunteering. I also love to learn, and am always looking for an opportunity to expand my skills.</p>
             <p>Technical Skills:</p>
             <ul>
-              <li class="about">Experience with HTML, CSS, Javascript</li>
+              <li class="about">Experience with HTML and CSS</li>
+              <li class="about">Experience with Javascript and jQuery</li>
+              <li class="about">Knowledge of Git</li>
               <li class="about">Intermediate knowledge of Python</li>
-              <li class="about">Basic knowledge of machine learning and R</li>
+              <li class="about">Intermediate knowledge of MySQL</li>
+              <li class="about">Basic knowledge of R</li>
+              <li class="about">Basic knowledge of machine learning</li>
             </ul>
           </div><!-- div 6 columns -->
         </div><!-- about container -->
 
-        <div id="portfolio" class="row">
-          <h2 class="page-header">portfolio</h2>
+        <div id="projects" class="row">
+          <h2 class="page-header">projects</h2>
           <div class="col-md-6">
           
-          <!-- Portfolio content for Python 2048 game -->
-          <a href="#python2048Modal" role="button" data-toggle="modal"><img src="https://dl.dropbox.com/s/9n60dlj8s60mm1h/works_2048Modified.jpg" alt="Modified game of 2048" class="img-responsive portfolio-works"></a>
+          <!-- projects content for Python 2048 game -->
+          <a href="#"><img src="images/works-colour/2048Game.JPG" alt="Modified game of 2048" class="img-responsive projects-works"></a>
           
-          <!-- modal for Python 2048 game -->
-          <div id="python2048Modal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modified 2048 game</h4>
-                </div> <!-- modal header -->
-                <div class="modal-body">
-                  <p>Created in 2016, where the task is to use Python to create a game using the given game rules and tasks.</p>
-                </div> <!-- modal body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> <!-- modal footer -->
-              </div> <!-- modal content -->
-              
-            </div> <!-- modal dialog -->
-          </div> <!-- python 2048 Modal tag -->
-          
-          <!-- Portfolio content for Enable website -->
-          <a href="#webEnableModal" role="button" data-toggle="modal"><img src="https://dl.dropbox.com/s/e0fonomd9vj06y5/works_Enable.jpg" alt="Enable website" class="img-responsive portfolio-works"></a>
-          
-          <!-- modal for Enable website -->
-          <div id="webEnableModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Enable website</h4>
-                </div> <!-- modal header -->
-                <div class="modal-body">
-                  <p>Created in 2015, where a number of students were assigned the task of redesigning the Enable website. We worked directly with the client under the supervision of the unit coordinator.</p>
-                </div> <!-- modal body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> <!-- modal footer -->
-              </div> <!-- modal content -->
-              
-            </div> <!-- modal dialog -->
-          </div> <!-- Enable website tag -->
+          <!-- projects content for Enable website -->
+          <a href="#"><img src="images/works-colour/enableSite.jpg" alt="Image of website for the company Enable" class="img-responsive projects-works"></a>
+
+          <a href="https://codepen.io/iamanadia/full/MOGBRb/"><img src="images/works-colour/quoteSite.PNG" alt="Link to website to randomly generate quotes" class="img-responsive projects-works"></a>
           
         </div><!-- div 6 columns -->
         <div class="col-md-6">
           
-          <!-- Portfolio content for Zoo Peru website -->
-          <a href="#webZooPeruModal" role="button" data-toggle="modal"><img src="https://dl.dropbox.com/s/lzf1hw14kgdc5xn/works_ZooPeru.jpg" alt="Zoo Peru website" class="img-responsive portfolio-works"></a>
+          <!-- projects content for Zoo Peru website -->
+          <a href="#"><img src="images/works-colour/zooPeruSite.jpg" alt="Image of website for the company Zoo Peru" class="img-responsive projects-works"></a>
           
-          <!-- modal for Zoo Peru website -->
-          <div id="webZooPeruModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Zoo Peru website</h4>
-                </div> <!-- modal header -->
-                <div class="modal-body">
-                  <p>Created in 2015, where a number of students were assigned the task of redesigning the Zoo Peru website. We worked directly with the client under the supervision of the unit coordinator.</p>
-                </div> <!-- modal body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> <!-- modal footer -->
-              </div> <!-- modal content -->
-              
-            </div> <!-- modal dialog -->
-          </div> <!-- Zoo Peru website tag -->
-          
+          <a href="https://nadclputri.github.io/rock-paper-scissors/"><img src="images/works-colour/gameSite.PNG" alt="Link to website to play rock, paper, scissors" class="img-responsive projects-works"></a>
+
+          <a href="https://nadclputri.github.io/etch-a-sketch/"><img src="images/works-colour/sketchSite.PNG" alt="Link to website of simplified version of etch-a-sketch" class="img-responsive projects-works"></a>
+
         </div> <!-- div 6 columns -->
-      </div> <!-- portfolio container -->
+      </div> <!-- projects container -->
 
         <div id="contact" class="row">
             <h2 class="page-header">contact me</h2>
-          <div class="col-md-6" id="contact-form">
+          <div class="col-md-12" id="contact-form">
             <form class="form-horizontal" role="form" method="post" action="https://formspree.io/nadclputri@gmail.com">
               <div class="form-group">
               <label class="control-label col-sm-2" for="name">Name:</label>
@@ -172,11 +126,6 @@
           </form>
           
           </div> <!-- div 6 columns -->
-          <div class="col-md-6" id="contact-text">
-            <p>email: <a href="mailto:nadclputri@gmail.com"> nadclputri@gmail.com</a></p>
-            <p>linkedin: <a href="https://www.linkedin.com/in/nadiaclputri">linkedin.com/in/nadiaclputri</a></p>
-            <p>google+: <a href="https://plus.google.com/112682226635207877478"> nadclputri@gmail.com</a></p>
-          </div> <!-- div 6 columns -->
         </div> <!-- contact container -->
       </div> <!-- body container -->
 
@@ -184,7 +133,7 @@
         <div class="site-map">
           <a href="#home">home</a>
           <a href="#about">about</a>
-          <a href="#portfolio">portfolio</a>
+          <a href="#projects">projects</a>
           <a href="#contact">contact</a>
         </div>
         <p>created by Nadia Putri</p>
