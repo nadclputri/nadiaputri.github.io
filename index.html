@@ -6,261 +6,103 @@
     <!-- Metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio showcasing works of Nadia Putri, Perth-based web developer and designer">
-    <meta name="keywords" content="Nadia Putri, portfolio, Nadia, Putri, web designer, web developer, Perth designer">
+    <meta name="description" content="projects showcasing works of Nadia Putri, Perth-based web developer and designer">
+    <meta name="keywords" content="Nadia Putri, projects, Nadia, Putri, web designer, web developer, Perth designer">
     <meta name="author" content="Nadia Putri">
 
     <!-- Links to Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="scripts/page.js"></script>
     
     <!-- Links to external stylesheets -->
-    <link rel="stylesheet" href="/styles/page.css">
-    <link rel="stylesheet" href="/scripts/page.js">
-    
+    <link rel="stylesheet" href="styles/style.css">
 
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="200">
-    <div class="page-container">
-      <nav role="navigation" class="navbar navbar-light navbar-toggleable-md navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navmenu">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <img src="https://dl.dropboxusercontent.com/s/i769joqeaphphwr/portfolioLogoSmall.png" alt="logo showing letter NP in a rectangle box">
-            </a>
-          </div> <!-- navbar-header -->
-
-          <div id="navmenu" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#home">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#portfolio">portfolio</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
+    <div id="page-container">
+      <nav role="navigation" class="navbar navbar-fixed-top">
+          <div id="sidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#home">home</a>
+              <a href="#about">about</a>
+              <a href="#projects">projects</a>
+              <a href="#contact">contact</a>
           </div><!-- navbar-collapse -->
-        </div><!-- navigation container-fluid -->
+        <span class="nav-button navbar-right" onclick="openNav()">&#9776; menu</span>
       </nav>
 
 
       <div class="container">
-        <div id="home" class="row">
+        <div class="row">
           <div class="col-lg-12">
-            <img src="/images/portfolioLogoLarge.png" alt="logo showing Nadia Putri written next to letter NP in a box, with Web Developer & Designer written below it" class="img-responsive center-block">
-            <div class="skills clearfix">
-              <a href="#/" data-toggle="popover" data-trigger="focus" title="graphic design" data-content="mainly using Adobe Suit, such as Photoshop, Illustrator and inDesign" data-placement="bottom">graphic design</a>
-              <div id="design" class="box pull-right"></div>
+            <img src="images/portfolioLogoLarge.png" alt="logo showing Nadia Putri written next to letter NP in a box, with Web Developer and Designer written below it" class="img-responsive center-block">
+            <div id="home-social">
+              <a href="https://www.linkedin.com/in/nadiaclputri/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
+              <a href="http://github.com/nadclputri/" target="_blank"><i class="fab fa-github-square fa-5x"></i></a>
+              <a href="mailto:nadclputri@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-5x"></i></a>
             </div>
-            <div class="skills clearfix">
-              <a href="#/" data-toggle="popover" data-trigger="focus" title="front-end web development" data-content="languages such as HTML, CSS, Javascript and using Bootstrap and Wordpress to build a responsive, fully functional website" data-placement="bottom">front-end web</a>
-              <div id="web" class="box pull-right"></div>
-            </div>
-            <div class="skills clearfix">
-              <a href="#/" data-toggle="popover" data-trigger="focus" title="other programming languages" data-content="in the process of learning python" data-placement="bottom">python</a>
-              <div id="python" class="box pull-right"></div>
-            </div>
-            <hr>
-            <div class="skills skill-text clearfix">
-              <p class="pull-left">skill level:</p>
-              <div class="beginner pull-right">beginner</div>
-              <div class="expert pull-right">expert</div>
-            </div>
-            <div class="home-link">
-              <a href="#portfolio">>> view portfolio</a>
-            </div>
+              <a href="#projects" id="home-to-project">>> view projects</a>
           </div> <!-- column for home section -->
         </div> <!-- row for home section -->
 
         <div id="about" class="row">
-          <div class="page-header">
-            <h2>about</h2>
-          </div><!-- page header -->
+          <h2 class="page-header">about</h2>
 
           <div class="col-md-6">
-            <img src="/images/portfolioAbout.jpg" alt="Photo of Nadia Putri" class="img-responsive img-circle">
+            <img src="images/portfolioAbout.jpg" alt="Photo of Nadia Putri" class="img-responsive img-circle">
           </div><!-- div 6 columns -->
 
           <div class="col-md-6">
-            <p class="pull-right about-text">Hello! I am Nadia Putri, web designer and developer, and programmer-in-training. I am passionate about design and programming, creativity and logic. I have always loved solving puzzles. I believe in the design philosophy: less is more.</p>
-
-            <p class="pull-right about-text">Born and raised in Indonesia. I have lived in Australia since 2010. I have always had an interest in art and design, and started to take an interest in it by taking Graphic Design class when I was at high school, on top of experimenting with design on my own. I undertook work experience at the following places: UWA and Monk Design. </p>
-
-            <p class="pull-right about-text">I also had a great interest in computers since I was a child, having taken computer lessons since I was 5. I currently have a partially completed Certificate III in IT from TAFE, on top of my Bachelor of Arts (Digital Design) from Curtin University, where I focused on web design and front-end web development. I am currently studying Master of IT at UWA, in order to further my knowledge of programming.</p> 
+            <p>I'm Nadia Putri.</p>
+            <p>I am an international student, currently a Master of IT student at UWA. My bachelor degree was in web design.</p>
+            <p>My passion includes coding and volunteering. I also love to learn, and am always looking for an opportunity to expand my skills.</p>
+            <p>Technical Skills:</p>
+            <ul>
+              <li class="about">Experience with HTML and CSS</li>
+              <li class="about">Experience with Javascript and jQuery</li>
+              <li class="about">Knowledge of Git</li>
+              <li class="about">Intermediate knowledge of Python</li>
+              <li class="about">Intermediate knowledge of MySQL</li>
+              <li class="about">Basic knowledge of R</li>
+              <li class="about">Basic knowledge of machine learning</li>
+            </ul>
           </div><!-- div 6 columns -->
         </div><!-- about container -->
 
-        <div id="portfolio" class="row">
-        <div class="page-header">
-          <h2>portfolio</h2>
-        </div><!-- page header -->
-        <div class="col-md-6">
+        <div id="projects" class="row">
+          <h2 class="page-header">projects</h2>
+          <div class="col-md-6">
           
-          <!-- Portfolio content for Python 2048 game -->
-          <a href="#python2048Modal" role="button" data-toggle="modal"><img src="https://dl.dropbox.com/s/9n60dlj8s60mm1h/works_2048Modified.jpg" alt="Modified game of 2048" class="img-responsive portfolio-works"></a>
+          <!-- projects content for Python 2048 game -->
+          <a href="#"><img src="images/works-colour/2048Game.JPG" alt="Modified game of 2048" class="img-responsive projects-works"></a>
           
-          <!-- modal for Python 2048 game -->
-          <div id="python2048Modal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modified 2048 game</h4>
-                </div> <!-- modal header -->
-                <div class="modal-body">
-                  <p>Created in 2016, where the task is to use Python to create a game using the given game rules and tasks.</p>
-                </div> <!-- modal body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> <!-- modal footer -->
-              </div> <!-- modal content -->
-              
-            </div> <!-- modal dialog -->
-          </div> <!-- python 2048 Modal tag -->
-          
-          <!-- Portfolio content for Enable website -->
-          <a href="#webEnableModal" role="button" data-toggle="modal"><img src="https://dl.dropbox.com/s/e0fonomd9vj06y5/works_Enable.jpg" alt="Enable website" class="img-responsive portfolio-works"></a>
-          
-          <!-- modal for Enable website -->
-          <div id="webEnableModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Enable website</h4>
-                </div> <!-- modal header -->
-                <div class="modal-body">
-                  <p>Created in 2015, where a number of students were assigned the task of redesigning the Enable website. We worked directly with the client under the supervision of the unit coordinator.</p>
-                </div> <!-- modal body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> <!-- modal footer -->
-              </div> <!-- modal content -->
-              
-            </div> <!-- modal dialog -->
-          </div> <!-- Enable website tag -->
-          
-          
-          <!-- Portfolio content for book cover design -->
-          <a href="#designBookCoverModal" role="button" data-toggle="modal"><img src="https://dl.dropboxusercontent.com/s/c2pclfp4inoc17d/works_BookCover.jpg" alt="Image of book cover" class="img-responsive portfolio-works"></a>
-          
-          <!-- modal for book cover design -->
-          <div id="designBookCoverModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Book Cover Design</h4>
-                </div> <!-- modal header -->
-                <div class="modal-body">
-                  <p>Created in 2014 as part of an online design challenge, using provided title, author and synopsis of a fictional book to design a book cover.</p>
-                  <a href="#/" data-toggle="popover" data-trigger="focus" title="resources" 
-                     data-content="http://iquitcountingstock.deviantart.com/art/Female-Face-Covered-II-186339593,
-                                   http://tigers-stock.deviantart.com/art/466-empty-room-01-290851733, 
-                                   http://darkmercy.deviantart.com/art/PHOTOSHOP-BRUSHES-barcodes-82411243, 
-                                   http://dianazdesignz.deviantart.com/art/Bird-Silhouette-Brushes-331767500" data-placement="bottom">resources</a>
-                </div> <!-- modal body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> <!-- modal footer -->
-              </div> <!-- modal content -->
-              
-            </div> <!-- modal dialog -->
-          </div> <!-- design book cover tag -->
+          <!-- projects content for Enable website -->
+          <a href="#"><img src="images/works-colour/enableSite.jpg" alt="Image of website for the company Enable" class="img-responsive projects-works"></a>
+
+          <a href="https://codepen.io/iamanadia/full/MOGBRb/"><img src="images/works-colour/quoteSite.PNG" alt="Link to website to randomly generate quotes" class="img-responsive projects-works"></a>
           
         </div><!-- div 6 columns -->
         <div class="col-md-6">
           
-          <!-- Portfolio content for Zoo Peru website -->
-          <a href="#webZooPeruModal" role="button" data-toggle="modal"><img src="https://dl.dropbox.com/s/lzf1hw14kgdc5xn/works_ZooPeru.jpg" alt="Zoo Peru website" class="img-responsive portfolio-works"></a>
+          <!-- projects content for Zoo Peru website -->
+          <a href="#"><img src="images/works-colour/zooPeruSite.jpg" alt="Image of website for the company Zoo Peru" class="img-responsive projects-works"></a>
           
-          <!-- modal for Zoo Peru website -->
-          <div id="webZooPeruModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Zoo Peru website</h4>
-                </div> <!-- modal header -->
-                <div class="modal-body">
-                  <p>Created in 2015, where a number of students were assigned the task of redesigning the Zoo Peru website. We worked directly with the client under the supervision of the unit coordinator.</p>
-                </div> <!-- modal body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> <!-- modal footer -->
-              </div> <!-- modal content -->
-              
-            </div> <!-- modal dialog -->
-          </div> <!-- Zoo Peru website tag -->
-          
-          
-          <!-- Portfolio content for anti drugs poster -->
-          <a href="#designAntiDrugsPosterModal" role="button" data-toggle="modal"><img src="https://dl.dropbox.com/s/5etd6r8f93eswpn/works_Poster.jpg" alt="Image of anti drugs poster" class="img-responsive portfolio-works"></a>
-          
-          <!-- modal for anti drugs poster -->
-          <div id="designAntiDrugsPosterModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Anti Drugs Poster</h4>
-                </div> <!-- modal header -->
-                <div class="modal-body">
-                  <p>Created in 2011, where the task is to to design a poster using a topic that is uncomfortable to be discussed for most people.</p>
-                </div> <!-- modal body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> <!-- modal footer -->
-              </div> <!-- modal content -->
-              
-            </div> <!-- modal dialog -->
-          </div> <!-- Anti drugs poster tag -->
-          
-          
-          <!-- Portfolio content for name card -->
-          <a href="#nameCardModal" role="button" data-toggle="modal"><img src="https://dl.dropbox.com/s/znqozjhabj2q0zp/works_NameCard.jpg" alt="Image of name card" class="img-responsive portfolio-works"></a>
-          
-          <!-- modal for name card -->
-          <div id="nameCardModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Name Card</h4>
-                </div> <!-- modal header -->
-                <div class="modal-body">
-                  <p>Created in 2014 as part of online challenge, to design a name card of a fictional person with a pop art theme</p>
-                </div> <!-- modal body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> <!-- modal footer -->
-              </div> <!-- modal content -->
-              
-            </div> <!-- modal dialog -->
-          </div> <!-- Anti drugs poster tag -->
-          
+          <a href="https://nadclputri.github.io/rock-paper-scissors/"><img src="images/works-colour/gameSite.PNG" alt="Link to website to play rock, paper, scissors" class="img-responsive projects-works"></a>
+
+          <a href="https://nadclputri.github.io/etch-a-sketch/"><img src="images/works-colour/sketchSite.PNG" alt="Link to website of simplified version of etch-a-sketch" class="img-responsive projects-works"></a>
+
         </div> <!-- div 6 columns -->
-      </div> <!-- portfolio container -->
+      </div> <!-- projects container -->
 
         <div id="contact" class="row">
-          <div class="page-header">
-            <h2>contact me</h2>
-          </div> <!-- page header -->
-          <div class="col-md-6" id="contact-form">
-
+            <h2 class="page-header">contact me</h2>
+          <div class="col-md-12" id="contact-form">
             <form class="form-horizontal" role="form" method="post" action="https://formspree.io/nadclputri@gmail.com">
               <div class="form-group">
               <label class="control-label col-sm-2" for="name">Name:</label>
@@ -283,12 +125,6 @@
             <button type="submit" class="btn btn-default">Send</button>
           </form>
           </div> <!-- div 6 columns -->
-          <div class="col-md-6" id="contact-text">
-            <p>Hello! If you want to contact me about work opportunities, comments, or anything else, fill in the contact form or shoot me an email, and I will get back to you as soon as possible.</p>
-            <p>email: <a href="mailto:nadclputri@gmail.com"> nadclputri@gmail.com</a></p>
-            <p>linkedin: <a href="https://www.linkedin.com/in/nadiaclputri">linkedin.com/in/nadiaclputri</a></p>
-            <p>google+: <a href="https://plus.google.com/112682226635207877478"> nadclputri@gmail.com</a></p>
-          </div> <!-- div 6 columns -->
         </div> <!-- contact container -->
       </div> <!-- body container -->
 
@@ -296,7 +132,7 @@
         <div class="site-map">
           <a href="#home">home</a>
           <a href="#about">about</a>
-          <a href="#portfolio">portfolio</a>
+          <a href="#projects">projects</a>
           <a href="#contact">contact</a>
         </div>
         <p>created by Nadia Putri</p>
